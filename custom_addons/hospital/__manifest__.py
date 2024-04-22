@@ -2,6 +2,7 @@
     'name': 'Hospital Management',
     'version': '1.0.0',
     'category': 'Hospital',
+    'author': 'Mohadeseh',
     'sequence': -100,
     'summary': 'Hospital Management System',
     'description': """""",
