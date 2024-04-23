@@ -7,7 +7,9 @@
     'summary': 'Hospital Management System',
     'description': """""",
     'depends': [],
-    'data': [],
+    'data': [
+        'views/menu.xml',
+    ],
     'demo': [],
     'installable': True,
     'application': True,
