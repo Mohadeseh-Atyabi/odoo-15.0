@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <menuitem id="menu_hospital_root" name="Hospital" sequence="0"/>
+
     <menuitem id="menu_patient_master" name="Patient Details" parent="menu_hospital_root" sequence="0"/>
+
     <menuitem id="menu_patient" name="Patient" parent="menu_patient_master" sequence="0"/>
 </odoo>
 
-<!-- After creating the menu, we should restart the app and then in the panel, go to Apps->Settings->Technical->Menu Items
- to edit the main menu and add an action. When we have hierarchical menu items, we should set action for the inner item.
-  So that, it will be displayed on the menu. -->
+        <!-- After creating the menu, we should restart the app and then in the panel, go to Apps->Settings->Technical->Menu Items
+         to edit the main menu and add an action. When we have hierarchical menu items, we should set action for the inner item.
+          So that, it will be appeared on the menu. -->
