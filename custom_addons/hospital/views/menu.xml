@@ -3,6 +3,7 @@
     <menuitem
             id="menu_hospital_root"
             name="Hospital"
+            web_icon="hospital,static/description/hospital_web.png"
             sequence="0"/>
 
     <menuitem

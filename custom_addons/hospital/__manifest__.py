@@ -8,6 +8,7 @@
     'description': """""",
     'depends': [],
     'data': [
+        'security/ir.model.access.csv',
         'views/menu.xml',
         'views/patient_menu.xml',
     ],
