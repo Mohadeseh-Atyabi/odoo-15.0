@@ -34,10 +34,11 @@
                         <!--           The following subgroups, split the fields into two columns             -->
                         <group>
                             <field name="patient_id"/>
-                            <field name="appointment_time"/>
+                            <field name="gender"/>
                         </group>
                         <group>
                             <field name="booking_date"/>
+                            <field name="appointment_time"/>
                         </group>
                     </group>
                 </sheet>

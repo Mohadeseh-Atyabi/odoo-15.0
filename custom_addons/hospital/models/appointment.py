@@ -10,5 +10,7 @@ class HospitalAppointment(models.Model):
 
     # To add any to one field, we should name it as 'model_id'.
     patient_id = fields.Many2one(comodel_name='hospital.patient', string='Patient')
+    # Creates a read only field from the Patient model. By adding 'readonly=False', we can make this field editable.
+    gender = fields.Selection(related='patient_id.gender')
     appointment_time = fields.Datetime(string='Appointment Time', default=fields.Datetime.now)
     booking_date = fields.Date(string='Booking Date', default=fields.Date.context_today)
