@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+    <record id="view_hospital_patient_form" model="ir.ui.view">
+        <field name="name">hospital.patient.form</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml">
+            <form>
+                <!--         Use sheet tag to put the form inside a bordered box       -->
+                <sheet>
+                    <!--  Define fields inside the group tag so that there sill be labels fo each field in the form  -->
+                    <group>
+                        <!--           The following subgroups, split the fields into two columns             -->
+                        <group>
+                            <field name="name"/>
+                            <field name="age"/>
+                        </group>
+                        <group>
+                            <field name="gender"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
     <record id="action_hospital_patient" model="ir.actions.act_window">
         <field name="name">Patients</field>
         <field name="type">ir.actions.act_window</field>
