@@ -6,7 +6,8 @@
     'sequence': -100,
     'summary': 'Hospital Management System',
     'description': """""",
-    'depends': [],
+    # Install modules in the system
+    'depends': ['mail'],
     'data': [
         'security/ir.model.access.csv',
         'views/menu.xml',

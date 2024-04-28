@@ -72,6 +72,12 @@
                         </group>
                     </group>
                 </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" grops="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
             </form>
         </field>
     </record>
@@ -83,7 +89,7 @@
         <field name="res_model">hospital.patient</field>
         <field name="view_mode">tree,form</field>
         <!-- To set a default filter (or group by) to the menu, we can set {'search_default_name_of_the_filter': 1} in the context field -->
-        <field name="context">{'search_default_filter_male': 1, 'search_default_group_by_gender': 1}</field>
+        <field name="context">{}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Create your first patient!
