@@ -12,6 +12,12 @@
             parent="menu_hospital_root"
             sequence="0"/>
 
+    <menuitem
+            id="menu_appointment_master"
+            name="Appointment Details"
+            parent="menu_hospital_root"
+            sequence="0"/>
+
 </odoo>
 
         <!-- After creating the menu, we should restart the app and then in the panel, go to Apps->Settings->Technical->Menu Items

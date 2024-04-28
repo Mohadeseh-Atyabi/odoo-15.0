@@ -65,7 +65,7 @@
             id="menu_appointment"
             name="Appointment"
             action="action_hospital_appointment"
-            parent="menu_patient_master"
+            parent="menu_appointment_master"
             sequence="0"/>
 
 </odoo>
