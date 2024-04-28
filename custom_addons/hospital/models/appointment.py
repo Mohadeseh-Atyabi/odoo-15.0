@@ -10,3 +10,5 @@ class HospitalAppointment(models.Model):
 
     # To add any to one field, we should name it as 'model_id'.
     patient_id = fields.Many2one(comodel_name='hospital.patient', string='Patient')
+    appointment_time = fields.Datetime(string='Appointment Time')
+    booking_date = fields.Date(string='Booking Date')

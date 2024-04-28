@@ -5,6 +5,9 @@
         <field name="model">hospital.appointment</field>
         <field name="arch" type="xml">
             <tree>
+                <field name="patient_id"/>
+                <field name="appointment_time"/>
+                <field name="booking_date"/>
             </tree>
         </field>
     </record>
@@ -31,8 +34,10 @@
                         <!--           The following subgroups, split the fields into two columns             -->
                         <group>
                             <field name="patient_id"/>
+                            <field name="appointment_time"/>
                         </group>
                         <group>
+                            <field name="booking_date"/>
                         </group>
                     </group>
                 </sheet>
@@ -48,7 +53,7 @@
 
 
     <record id="action_hospital_appointment" model="ir.actions.act_window">
-        <field name="name">Appointment</field>
+        <field name="name">Appointments</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">hospital.appointment</field>
         <field name="view_mode">tree,form</field>
@@ -63,7 +68,7 @@
 
     <menuitem
             id="menu_appointment"
-            name="Appointment"
+            name="Appointments"
             action="action_hospital_appointment"
             parent="menu_appointment_master"
             sequence="0"/>
