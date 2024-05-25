@@ -34,6 +34,7 @@
                         <!--           The following subgroups, split the fields into two columns             -->
                         <group>
                             <field name="patient_id"/>
+                            <field name="ref"/>
                             <field name="gender"/>
                         </group>
                         <group>
