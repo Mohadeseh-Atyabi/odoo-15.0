@@ -35,13 +35,24 @@
                         <group>
                             <field name="patient_id"/>
                             <field name="ref"/>
-                            <field name="gender"/>
                         </group>
                         <group>
-                            <field name="booking_date"/>
                             <field name="appointment_time"/>
                         </group>
                     </group>
+
+                    <notebook>
+                        <page string="Prescription" name="prescription">
+                            <group>
+                                <field name="gender"/>
+                            </group>
+                        </page>
+                        <page string="Pharmacy" name="pharmacy">
+                            <group>
+                                <field name="booking_date"/>
+                            </group>
+                        </page>
+                    </notebook>
                 </sheet>
                 <!-- Chatter -->
                 <div class="oe_chatter">
