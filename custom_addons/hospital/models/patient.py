@@ -8,6 +8,7 @@ class HospitalPatient(models.Model):
     # Inherit these models to use in chatter
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = "Hospital Patient"
+    _rec_name = "name"
 
     name = fields.Char(string='Name', tracking=True)
     date_of_birth = fields.Date(string='Date of Birth')
